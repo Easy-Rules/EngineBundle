@@ -1,0 +1,8 @@
+services:
+
+    easy_business_rules.engine.expression_engine:
+        class: EasyRules\Engine\ExpressionLanguage\ExpressionEngine
+
+    easy_business_rules_engine.infrastructure_doctrine_orm.logic_repository:
+        class: EasyRules\EngineBundle\Infrastructure\DoctrineORM\LogicRepository
+        arguments: [ "@doctrine" ]
